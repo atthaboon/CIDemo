@@ -6,13 +6,9 @@ using System.Threading.Tasks;
 
 namespace CIDemo.Models
 {
-    public class Circle : Shape
+    public class Circle : IShapeCalculate
     {
-        public Circle(double width, double height) : base(width, height)
-        {
-        }
-
-        public override double CalculateSurface()
+        public double CalculateSurface(double width, double height)
         {
             throw new NotImplementedException();
         }

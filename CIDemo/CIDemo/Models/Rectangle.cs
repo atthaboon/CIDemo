@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace CIDemo.Models
 {
-    public class Rectangle : Shape
+    public class Rectangle : IShapeCalculate
     {
-        public Rectangle(double width, double height)
-           : base(width, height)
-        {
-        }
-
-        public override double CalculateSurface()
+        public double CalculateSurface(double width, double height)
         {
             throw new NotImplementedException();
         }

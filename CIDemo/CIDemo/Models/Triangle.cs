@@ -6,13 +6,9 @@ using System.Threading.Tasks;
 
 namespace CIDemo.Models
 {
-    public class Triangle : Shape
+    public class Triangle : IShapeCalculate
     {
-        public Triangle(double width, double height) : base(width, height)
-        {
-        }
-
-        public override double CalculateSurface()
+        public double CalculateSurface(double width, double height)
         {
             throw new NotImplementedException();
         }

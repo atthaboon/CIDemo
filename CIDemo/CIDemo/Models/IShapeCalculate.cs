@@ -8,6 +8,6 @@ namespace CIDemo.Models
 {
     public interface IShapeCalculate
     {
-        double CalculateSurface();
+        double CalculateSurface(double width, double height);
     }
 }
