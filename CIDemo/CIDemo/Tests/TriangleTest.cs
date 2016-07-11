@@ -19,34 +19,31 @@ namespace CIDemo.Tests
             ShapeCalculator  = new Triangle();   
         }
 
-        [TestCase(240, 360)]
+        [Test]
         public void TriangleCalculation_WithPositiveValue_ShouldCalculate()
         {
-            //arrange
-            var width = 360;
-            var height = 240;
-            var expected = (0.5)*width*height;
+            //Arrange
+            var width = 2;
+            var height = 4;
 
-            //act
+            //Act
             var actual = ShapeCalculator.CalculateSurface(width, height);
 
-            //assert
-            Assert.AreEqual(expected, actual);
+            //Assert
+            Assert.AreEqual(4, actual);
         }
 
         [TestCase(-200, 200)]
         [TestCase(200,-200)]
         public void TriangleCalculation_WithNegativeValue_ShouldReturnPositiveValue(long width, long height)
         {
-            //arrange
-            var expected = 0.5 * Math.Abs(width*height);
 
-            //act
+            //Act
             var actual = ShapeCalculator.CalculateSurface(width, height);
 
-            //assert
+            //Assert
             Assert.IsTrue(actual > 0);
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(20000d, actual);
         }
 
     }
