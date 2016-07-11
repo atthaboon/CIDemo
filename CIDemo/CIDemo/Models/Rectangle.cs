@@ -10,7 +10,7 @@ namespace CIDemo.Models
     {
         public double CalculateSurface(double width, double height)
         {
-            throw new NotImplementedException();
+            return 2 * (width + height);
         }
     }
 }
