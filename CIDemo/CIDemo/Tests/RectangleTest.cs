@@ -12,6 +12,8 @@ namespace CIDemo.Tests
     public class RectangleTest
     {
         private IShapeCalculate ShapeCalculator;
+
+        [SetUp]
         public void Setup()
         {
             ShapeCalculator  = new Triangle();   
