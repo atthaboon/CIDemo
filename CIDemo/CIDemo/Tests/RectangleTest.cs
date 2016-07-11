@@ -10,9 +10,10 @@ using System.Threading.Tasks;
 namespace CIDemo.Tests
 {
     [TestFixture]
-    public class TriangleTest
+    public class RectangleTest
     {
         private Rectangle calculator { get; set; }
+
         [SetUp]
         public void SetUp()
         {

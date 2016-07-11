@@ -58,7 +58,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ShapeCalculateService.cs" />
-    <Compile Include="Tests\TriangleTest.cs" />
+    <Compile Include="Tests\RectangleTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
