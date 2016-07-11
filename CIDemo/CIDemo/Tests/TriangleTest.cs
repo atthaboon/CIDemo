@@ -9,7 +9,7 @@ using NUnit.Framework;
 namespace CIDemo.Tests
 {
     [TestFixture]
-    public class RectangleTest
+    public class TriangleTest
     {
         private IShapeCalculate ShapeCalculator;
 
