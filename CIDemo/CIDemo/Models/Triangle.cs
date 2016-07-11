@@ -11,7 +11,7 @@ namespace CIDemo.Models
         public double CalculateSurface(double width, double height)
         {
             var area = 0.5 * width * height;
-            return area;
+            return Math.Abs(area);
 
         }
     }
