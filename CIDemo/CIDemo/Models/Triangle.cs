@@ -10,7 +10,9 @@ namespace CIDemo.Models
     {
         public double CalculateSurface(double width, double height)
         {
-            throw new NotImplementedException();
+            var area = 0.5 * width * height;
+            return area;
+
         }
     }
 }
