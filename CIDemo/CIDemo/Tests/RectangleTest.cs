@@ -11,21 +11,31 @@ namespace CIDemo.Tests
     [TestFixture]
     public class RectangleTest
     {
-        private IShapeCalculate ShapCalculate;
+        private IShapeCalculate ShapeCalculator;
         public void Setup()
         {
-            ShapCalculate  = new Rectangle();   
+            ShapeCalculator  = new Triangle();   
         }
 
-        [Test]
-        public void Rectangle_Calculation()
+        [TestCase(240, 360)]
+        public void Rectangle_Calculation(long width, long height)
         {
-            var width = 240;
-            var height = 360;
+            var expected = (0.5)*width*height;
 
-            var actual = ShapCalculate.CalculateSurface(width, height);
+            var actual = ShapeCalculator.CalculateSurface(width, height);
 
             Assert.AreEqual(width*height, actual);
+        }
+
+        [TestCase(-200, 200)]
+        [TestCase(200,-200)]
+        public void Rectangle_Calculation_WithNegativeValue(long width, long height)
+        {
+            var expected = 0.5 * Math.Abs(width*height);
+
+            var actual = ShapeCalculator.CalculateSurface(width, height);
+
+            Assert.AreEqual(expected, actual);
         }
 
     }
