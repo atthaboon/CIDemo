@@ -26,7 +26,7 @@ namespace CIDemo.Tests
 
             var actual = ShapeCalculator.CalculateSurface(width, height);
 
-            Assert.AreEqual(width*height, actual);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestCase(-200, 200)]
