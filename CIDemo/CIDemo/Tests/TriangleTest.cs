@@ -20,7 +20,7 @@ namespace CIDemo.Tests
         }
 
         [TestCase(240, 360)]
-        public void Rectangle_Calculation(long width, long height)
+        public void Triangle_Calculation(long width, long height)
         {
             var expected = (0.5)*width*height;
 
@@ -31,7 +31,7 @@ namespace CIDemo.Tests
 
         [TestCase(-200, 200)]
         [TestCase(200,-200)]
-        public void Rectangle_Calculation_WithNegativeValue(long width, long height)
+        public void Triangle_Calculation_WithNegativeValue(long width, long height)
         {
             var expected = 0.5 * Math.Abs(width*height);
 
