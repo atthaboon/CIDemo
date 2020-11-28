@@ -20,5 +20,12 @@ pipeline {
       }
     }
 
+    stage('Q10 Plus') {
+      steps {
+        sleep 3
+        sh 'echo 111'
+      }
+    }
+
   }
 }
