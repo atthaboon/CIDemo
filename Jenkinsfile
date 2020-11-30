@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('Q10 Step Commission') {
+    stage('Step Commission') {
       parallel {
         stage('Q10 Step Commission') {
           steps {
